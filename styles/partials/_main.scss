@@ -1,8 +1,6 @@
 .main-index {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
     text-align: center;
 
     .tarjetasJoyas {
@@ -13,12 +11,8 @@
         margin: 50px;
 
         .tarjeta {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 300px;
-            height: 300px;
+            width: $anchoTarj;
+            height: $altoTarj;
             transition: border .1s;
 
             .tarjeta p {
@@ -46,17 +40,14 @@
 
     .lista-productos {
         margin: 30px;
-
         ul {
             list-style: none;
 
             a {
-                color: #000;
                 text-decoration: none ;
                 font-weight: 700;
                 margin: 15px;
             }
-
             .lista__item {
                 font-weight: 500;
                 margin: 7px 20px;
@@ -69,10 +60,7 @@
         flex-wrap: wrap;
 
         .tarjeta {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex(column, center, center);
             width: 300px;
             height: 300px;
             transition: border .1s;
@@ -103,8 +91,6 @@
     justify-items: center;
 
     .contacto__ul {
-        display: flex;
-        flex-direction: column;
         list-style: none;
 
         li { 
@@ -132,11 +118,9 @@
     }
 
     .aFacebook {
-        color: rgb(47, 6, 250);
         transition: .4s;
 
         .fa-square-facebook {
-            color: rgb(47, 6, 250);
             transition: .4s;
 
             &:hover {
@@ -150,11 +134,9 @@
     }
 
     .aTwitter {
-        color: rgb(6, 132, 250);
         transition: .4s;
 
         .fa-square-twitter {
-            color: rgb(6, 132, 250);
             transition: .4s;
             
             &:hover {
@@ -168,11 +150,9 @@
     }
     
     .aInstagram {
-        color: rgb(205, 19, 87);
         transition: .4s;
 
         .fa-square-instagram {
-            color: rgb(205, 19, 87);
             transition: .4s;
 
             &:hover {
@@ -204,8 +184,16 @@
     .h2-responsive {
         display: none;
     }
-    
 }
+
+
+
+@each $redSocial, $colorRedes in $redes {
+    .fa-#{$redSocial} {
+        color: $colorRedes;
+    }
+}
+
 
 
 .main-pf {

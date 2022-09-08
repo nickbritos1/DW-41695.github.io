@@ -1,0 +1,16 @@
+$anchoTarj: 300px;
+$altoTarj: 300px;
+
+$redes: (
+    facebook: #2f06fa,
+    twitter: #0684fa,
+    instagram: #cd1357
+);
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    
+}

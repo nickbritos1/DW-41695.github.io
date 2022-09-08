@@ -9,6 +9,171 @@ header {
   top: 0;
 }
 
+.main-index {
+  width: 100%;
+  text-align: center;
+}
+.main-index .tarjetasJoyas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px;
+}
+.main-index .tarjetasJoyas .tarjeta {
+  width: 300px;
+  height: 300px;
+  transition: border 0.1s;
+}
+.main-index .tarjetasJoyas .tarjeta .tarjeta p {
+  text-align: center;
+}
+.main-index .tarjetasJoyas .tarjeta .tarjetaImg {
+  width: 200px;
+}
+.main-index .tarjetasJoyas .tarjeta:hover {
+  border: #000 3px solid;
+  border-radius: 15%;
+}
+
+.main-productos {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: 15px;
+}
+.main-productos .lista-productos {
+  margin: 30px;
+}
+.main-productos .lista-productos ul {
+  list-style: none;
+}
+.main-productos .lista-productos ul a {
+  text-decoration: none;
+  font-weight: 700;
+  margin: 15px;
+}
+.main-productos .lista-productos ul .lista__item {
+  font-weight: 500;
+  margin: 7px 20px;
+}
+.main-productos .expositor-productos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-productos .expositor-productos .tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  transition: border 0.1s;
+}
+.main-productos .expositor-productos .tarjeta .tarjeta p {
+  text-align: center;
+}
+.main-productos .expositor-productos .tarjeta .tarjetaImg {
+  width: 200px;
+}
+.main-productos .expositor-productos .tarjeta:hover {
+  border: #000 3px solid;
+  border-radius: 15%;
+}
+
+.main-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.main-contacto .contacto__ul {
+  list-style: none;
+}
+.main-contacto .contacto__ul li {
+  margin: 20px;
+}
+.main-contacto .contacto__ul a {
+  font-family: FiraSans;
+  text-decoration: none;
+  font-size: 40px;
+  margin: 50px;
+}
+.main-contacto .contacto__ul i {
+  font-size: 70px;
+}
+.main-contacto .contacto__ul p {
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+  bottom: 10px;
+}
+.main-contacto .aFacebook {
+  transition: 0.4s;
+}
+.main-contacto .aFacebook .fa-square-facebook {
+  transition: 0.4s;
+}
+.main-contacto .aFacebook .fa-square-facebook:hover {
+  color: rgba(47, 6, 250, 0.544);
+}
+.main-contacto .aFacebook:hover {
+  color: rgba(47, 6, 250, 0.544);
+}
+.main-contacto .aTwitter {
+  transition: 0.4s;
+}
+.main-contacto .aTwitter .fa-square-twitter {
+  transition: 0.4s;
+}
+.main-contacto .aTwitter .fa-square-twitter:hover {
+  color: rgba(6, 132, 250, 0.544);
+}
+.main-contacto .aTwitter:hover {
+  color: rgba(6, 132, 250, 0.544);
+}
+.main-contacto .aInstagram {
+  transition: 0.4s;
+}
+.main-contacto .aInstagram .fa-square-instagram {
+  transition: 0.4s;
+}
+.main-contacto .aInstagram .fa-square-instagram:hover {
+  color: rgba(205, 19, 87, 0.544);
+}
+.main-contacto .aInstagram:hover {
+  color: rgba(205, 19, 87, 0.544);
+}
+.main-contacto .contacto-form form {
+  display: flex;
+  flex-direction: row;
+}
+.main-contacto .contacto-form h2 {
+  text-align: center;
+}
+.main-contacto .contacto-form .enviar {
+  margin-top: 5px;
+}
+.main-contacto .h2-responsive {
+  display: none;
+}
+
+.fa-facebook {
+  color: #2f06fa;
+}
+
+.fa-twitter {
+  color: #0684fa;
+}
+
+.fa-instagram {
+  color: #cd1357;
+}
+
+.main-pf {
+  margin: 20px 0 20px 0;
+  padding-left: 20%;
+  width: 80%;
+}
+
 .banner {
   display: flex;
   justify-content: center;
@@ -27,12 +192,14 @@ header {
 }
 .banner-joyas h1 {
   text-shadow: 0px 0px 4px rgb(93, 92, 92);
+  color: #0684fa;
 }
 
 .productos {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .productos .producto {
   overflow: hidden;
@@ -85,175 +252,6 @@ footer .contacto__a {
 footer .contacto__titulo {
   text-align: center;
   color: #fff;
-}
-
-.main-index {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.main-index .tarjetasJoyas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin: 50px;
-}
-.main-index .tarjetasJoyas .tarjeta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
-  transition: border 0.1s;
-}
-.main-index .tarjetasJoyas .tarjeta .tarjeta p {
-  text-align: center;
-}
-.main-index .tarjetasJoyas .tarjeta .tarjetaImg {
-  width: 200px;
-}
-.main-index .tarjetasJoyas .tarjeta:hover {
-  border: #000 3px solid;
-  border-radius: 15%;
-}
-
-.main-productos {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  margin: 15px;
-}
-.main-productos .lista-productos {
-  margin: 30px;
-}
-.main-productos .lista-productos ul {
-  list-style: none;
-}
-.main-productos .lista-productos ul a {
-  color: #000;
-  text-decoration: none;
-  font-weight: 700;
-  margin: 15px;
-}
-.main-productos .lista-productos ul .lista__item {
-  font-weight: 500;
-  margin: 7px 20px;
-}
-.main-productos .expositor-productos {
-  display: flex;
-  flex-wrap: wrap;
-}
-.main-productos .expositor-productos .tarjeta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
-  transition: border 0.1s;
-}
-.main-productos .expositor-productos .tarjeta .tarjeta p {
-  text-align: center;
-}
-.main-productos .expositor-productos .tarjeta .tarjetaImg {
-  width: 200px;
-}
-.main-productos .expositor-productos .tarjeta:hover {
-  border: #000 3px solid;
-  border-radius: 15%;
-}
-
-.main-contacto {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-}
-.main-contacto .contacto__ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-.main-contacto .contacto__ul li {
-  margin: 20px;
-}
-.main-contacto .contacto__ul a {
-  font-family: FiraSans;
-  text-decoration: none;
-  font-size: 40px;
-  margin: 50px;
-}
-.main-contacto .contacto__ul i {
-  font-size: 70px;
-}
-.main-contacto .contacto__ul p {
-  display: inline-block;
-  margin-left: 10px;
-  position: relative;
-  bottom: 10px;
-}
-.main-contacto .aFacebook {
-  color: rgb(47, 6, 250);
-  transition: 0.4s;
-}
-.main-contacto .aFacebook .fa-square-facebook {
-  color: rgb(47, 6, 250);
-  transition: 0.4s;
-}
-.main-contacto .aFacebook .fa-square-facebook:hover {
-  color: rgba(47, 6, 250, 0.544);
-}
-.main-contacto .aFacebook:hover {
-  color: rgba(47, 6, 250, 0.544);
-}
-.main-contacto .aTwitter {
-  color: rgb(6, 132, 250);
-  transition: 0.4s;
-}
-.main-contacto .aTwitter .fa-square-twitter {
-  color: rgb(6, 132, 250);
-  transition: 0.4s;
-}
-.main-contacto .aTwitter .fa-square-twitter:hover {
-  color: rgba(6, 132, 250, 0.544);
-}
-.main-contacto .aTwitter:hover {
-  color: rgba(6, 132, 250, 0.544);
-}
-.main-contacto .aInstagram {
-  color: rgb(205, 19, 87);
-  transition: 0.4s;
-}
-.main-contacto .aInstagram .fa-square-instagram {
-  color: rgb(205, 19, 87);
-  transition: 0.4s;
-}
-.main-contacto .aInstagram .fa-square-instagram:hover {
-  color: rgba(205, 19, 87, 0.544);
-}
-.main-contacto .aInstagram:hover {
-  color: rgba(205, 19, 87, 0.544);
-}
-.main-contacto .contacto-form form {
-  display: flex;
-  flex-direction: row;
-}
-.main-contacto .contacto-form h2 {
-  text-align: center;
-}
-.main-contacto .contacto-form .enviar {
-  margin-top: 5px;
-}
-.main-contacto .h2-responsive {
-  display: none;
-}
-
-.main-pf {
-  margin: 20px 0 20px 0;
-  padding-left: 20%;
-  width: 80%;
 }
 
 @media screen and (max-width: 480px) {
@@ -323,4 +321,4 @@ footer .contacto__titulo {
     width: 250px;
     height: 115px;
   }
-}
+}/*# sourceMappingURL=estilo.css.map */
